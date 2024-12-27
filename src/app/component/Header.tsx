@@ -3,8 +3,8 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header>
-      <div className="fixed mx-48 flex items-center gap-4 py-16">
+    <header className="fixed mx-48 w-full bg-background py-16">
+      <div className="flex w-fit items-center gap-4">
         <LogoIcon />
         <span className="font-sen text-28 font-bold text-primary">
           Mandalart

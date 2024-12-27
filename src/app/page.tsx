@@ -1,4 +1,5 @@
 import Header from "@/app/component/Header";
+import Grid9x9 from "@/app/component/grid/Grid9x9";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           placeholder="제목을 입력하세요"
           className="text-center text-64 font-bold leading-90 focus:outline-none"
         />
+        <Grid9x9 />
       </div>
     </div>
   );
