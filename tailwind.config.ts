@@ -35,6 +35,7 @@ export default {
         pre: ["var(--font-pretendard)"],
       },
       borderWidth: px0_10,
+      borderRadius: px0_100,
       fontSize: px0_100,
       lineHeight: px0_100,
       minWidth: px0_200,
