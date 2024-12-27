@@ -34,6 +34,7 @@ export default {
       minWidth: px0_200,
       minHeight: px0_200,
       spacing: px0_200,
+      gap: px0_100,
     },
   },
   plugins: [],

@@ -4,9 +4,9 @@ export default function LogoIcon() {
       <path
         d="M13.9999 2.33333V25.6667M22.2495 5.75042L5.75034 22.2496M25.6666 14H2.33325M22.2495 22.2496L5.75034 5.75042"
         stroke="#3179B7"
-        stroke-width="2.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
