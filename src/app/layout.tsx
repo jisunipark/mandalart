@@ -1,3 +1,4 @@
+import { pretendard, sen } from '@/fonts/fonts';
 import './globals.css';
 
 export default function RootLayout({
@@ -6,8 +7,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
-      <body>{children}</body>
+    <html lang="ko" className={`${pretendard.variable} ${sen.variable}`}>
+      <body className="font-pre">{children}</body>
     </html>
   );
 }
