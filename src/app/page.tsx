@@ -13,7 +13,7 @@ export default function Home() {
         <input
           type="text-300"
           placeholder="제목을 입력하세요"
-          className="text-center text-64 font-bold leading-90 focus:outline-none"
+          className="bg-background text-center text-64 font-bold leading-90 focus:outline-none"
         />
         <Chart />
         <div className="flex cursor-pointer gap-16">

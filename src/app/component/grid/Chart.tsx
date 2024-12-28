@@ -1,3 +1,4 @@
+import CoreGrid from "@/app/component/grid/CoreGrid";
 import Grid from "@/app/component/grid/Grid";
 
 export default function Chart() {
@@ -7,7 +8,7 @@ export default function Chart() {
       <Grid />
       <Grid />
       <Grid />
-      <Grid />
+      <CoreGrid />
       <Grid />
       <Grid />
       <Grid />

@@ -25,7 +25,7 @@ export default {
         primary: "#3179B7",
         gray: {
           100: "#F7F7F7",
-          200: "DDD",
+          200: "#DDD",
           300: "#D9D9D9",
           400: "#CBCBCB",
         },
