@@ -1,6 +1,6 @@
 import Button from "@/app/component/Button";
 import Header from "@/app/component/Header";
-import Grid9x9 from "@/app/component/grid/Grid9x9";
+import Chart from "@/app/component/grid/Chart";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
           placeholder="제목을 입력하세요"
           className="text-center text-64 font-bold leading-90 focus:outline-none"
         />
-        <Grid9x9 />
+        <Chart />
         <div className="flex cursor-pointer gap-16">
           <Button>이미지로 저장</Button>
           <Button>초기화</Button>
