@@ -1,10 +1,10 @@
 type SubGoal = {
-  id: number;
+  subId: number;
   subGoal: string;
 };
 
 type KeyGoal = {
-  id: number;
+  keyId: number;
   keyGoal: string;
   subGoals: SubGoal[];
 };
@@ -18,305 +18,305 @@ export const DEFAULT_GOAL_DATA: GoalData = {
   coreGoal: "",
   keyGoals: [
     {
-      id: 1,
+      keyId: 1,
       keyGoal: "",
       subGoals: [
         {
-          id: 1,
+          subId: 1,
           subGoal: "",
         },
         {
-          id: 2,
+          subId: 2,
           subGoal: "",
         },
         {
-          id: 3,
+          subId: 3,
           subGoal: "",
         },
         {
-          id: 4,
+          subId: 4,
           subGoal: "",
         },
         {
-          id: 5,
+          subId: 5,
           subGoal: "",
         },
         {
-          id: 6,
+          subId: 6,
           subGoal: "",
         },
         {
-          id: 7,
+          subId: 7,
           subGoal: "",
         },
         {
-          id: 8,
+          subId: 8,
           subGoal: "",
         },
       ],
     },
     {
-      id: 2,
+      keyId: 2,
       keyGoal: "",
       subGoals: [
         {
-          id: 1,
+          subId: 1,
           subGoal: "",
         },
         {
-          id: 2,
+          subId: 2,
           subGoal: "",
         },
         {
-          id: 3,
+          subId: 3,
           subGoal: "",
         },
         {
-          id: 4,
+          subId: 4,
           subGoal: "",
         },
         {
-          id: 5,
+          subId: 5,
           subGoal: "",
         },
         {
-          id: 6,
+          subId: 6,
           subGoal: "",
         },
         {
-          id: 7,
+          subId: 7,
           subGoal: "",
         },
         {
-          id: 8,
+          subId: 8,
           subGoal: "",
         },
       ],
     },
     {
-      id: 3,
+      keyId: 3,
       keyGoal: "",
       subGoals: [
         {
-          id: 1,
+          subId: 1,
           subGoal: "",
         },
         {
-          id: 2,
+          subId: 2,
           subGoal: "",
         },
         {
-          id: 3,
+          subId: 3,
           subGoal: "",
         },
         {
-          id: 4,
+          subId: 4,
           subGoal: "",
         },
         {
-          id: 5,
+          subId: 5,
           subGoal: "",
         },
         {
-          id: 6,
+          subId: 6,
           subGoal: "",
         },
         {
-          id: 7,
+          subId: 7,
           subGoal: "",
         },
         {
-          id: 8,
+          subId: 8,
           subGoal: "",
         },
       ],
     },
     {
-      id: 4,
+      keyId: 4,
       keyGoal: "",
       subGoals: [
         {
-          id: 1,
+          subId: 1,
           subGoal: "",
         },
         {
-          id: 2,
+          subId: 2,
           subGoal: "",
         },
         {
-          id: 3,
+          subId: 3,
           subGoal: "",
         },
         {
-          id: 4,
+          subId: 4,
           subGoal: "",
         },
         {
-          id: 5,
+          subId: 5,
           subGoal: "",
         },
         {
-          id: 6,
+          subId: 6,
           subGoal: "",
         },
         {
-          id: 7,
+          subId: 7,
           subGoal: "",
         },
         {
-          id: 8,
+          subId: 8,
           subGoal: "",
         },
       ],
     },
     {
-      id: 5,
+      keyId: 5,
       keyGoal: "",
       subGoals: [
         {
-          id: 1,
+          subId: 1,
           subGoal: "",
         },
         {
-          id: 2,
+          subId: 2,
           subGoal: "",
         },
         {
-          id: 3,
+          subId: 3,
           subGoal: "",
         },
         {
-          id: 4,
+          subId: 4,
           subGoal: "",
         },
         {
-          id: 5,
+          subId: 5,
           subGoal: "",
         },
         {
-          id: 6,
+          subId: 6,
           subGoal: "",
         },
         {
-          id: 7,
+          subId: 7,
           subGoal: "",
         },
         {
-          id: 8,
+          subId: 8,
           subGoal: "",
         },
       ],
     },
     {
-      id: 6,
+      keyId: 6,
       keyGoal: "",
       subGoals: [
         {
-          id: 1,
+          subId: 1,
           subGoal: "",
         },
         {
-          id: 2,
+          subId: 2,
           subGoal: "",
         },
         {
-          id: 3,
+          subId: 3,
           subGoal: "",
         },
         {
-          id: 4,
+          subId: 4,
           subGoal: "",
         },
         {
-          id: 5,
+          subId: 5,
           subGoal: "",
         },
         {
-          id: 6,
+          subId: 6,
           subGoal: "",
         },
         {
-          id: 7,
+          subId: 7,
           subGoal: "",
         },
         {
-          id: 8,
+          subId: 8,
           subGoal: "",
         },
       ],
     },
     {
-      id: 7,
+      keyId: 7,
       keyGoal: "",
       subGoals: [
         {
-          id: 1,
+          subId: 1,
           subGoal: "",
         },
         {
-          id: 2,
+          subId: 2,
           subGoal: "",
         },
         {
-          id: 3,
+          subId: 3,
           subGoal: "",
         },
         {
-          id: 4,
+          subId: 4,
           subGoal: "",
         },
         {
-          id: 5,
+          subId: 5,
           subGoal: "",
         },
         {
-          id: 6,
+          subId: 6,
           subGoal: "",
         },
         {
-          id: 7,
+          subId: 7,
           subGoal: "",
         },
         {
-          id: 8,
+          subId: 8,
           subGoal: "",
         },
       ],
     },
     {
-      id: 8,
+      keyId: 8,
       keyGoal: "",
       subGoals: [
         {
-          id: 1,
+          subId: 1,
           subGoal: "",
         },
         {
-          id: 2,
+          subId: 2,
           subGoal: "",
         },
         {
-          id: 3,
+          subId: 3,
           subGoal: "",
         },
         {
-          id: 4,
+          subId: 4,
           subGoal: "",
         },
         {
-          id: 5,
+          subId: 5,
           subGoal: "",
         },
         {
-          id: 6,
+          subId: 6,
           subGoal: "",
         },
         {
-          id: 7,
+          subId: 7,
           subGoal: "",
         },
         {
-          id: 8,
+          subId: 8,
           subGoal: "",
         },
       ],
