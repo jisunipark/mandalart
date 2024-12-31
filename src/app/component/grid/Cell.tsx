@@ -1,10 +1,13 @@
 "use client";
 
 import { useGoalStore } from "@/store/goal";
+import { CellId, GridId } from "@/type/type";
 import { useState } from "react";
 
 type Props = {
   type: "coreGoal" | "keyGoal" | "subGoal";
+  gridId: GridId;
+  cellId: CellId;
 };
 
 const cellStyle = {
@@ -13,16 +16,20 @@ const cellStyle = {
   subGoal: "bg-white",
 };
 
-export default function Cell({ type }: Props) {
+export default function Cell({ type, cellId }: Props) {
   const [thisGoal, setThisGoal] = useState("");
 
   const { goal, setGoal } = useGoalStore();
 
   const handleBlur = () => {
+    const nextGoal = { ...goal };
+
     if (type === "coreGoal") {
-      const nextGoal = { ...goal };
       nextGoal["coreGoal"] = thisGoal;
       setGoal(nextGoal);
+    }
+
+    if (type === "keyGoal") {
     }
   };
 

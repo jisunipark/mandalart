@@ -1,17 +1,21 @@
 import Cell from "@/app/component/grid/Cell";
+import { GridId, IDs } from "@/type/type";
 
-export default function Grid() {
+interface Props {
+  gridId: GridId;
+}
+
+export default function Grid({ gridId }: Props) {
   return (
     <div className="grid grid-cols-3 grid-rows-3 border-[1.5px] border-gray-300">
-      <Cell type="subGoal" />
-      <Cell type="subGoal" />
-      <Cell type="subGoal" />
-      <Cell type="subGoal" />
-      <Cell type="keyGoal" />
-      <Cell type="subGoal" />
-      <Cell type="subGoal" />
-      <Cell type="subGoal" />
-      <Cell type="subGoal" />
+      {IDs.map((cellId) => (
+        <Cell
+          key={cellId}
+          type={cellId === 5 ? "keyGoal" : "subGoal"}
+          gridId={gridId}
+          cellId={cellId}
+        />
+      ))}
     </div>
   );
 }
