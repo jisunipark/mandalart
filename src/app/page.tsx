@@ -1,11 +1,17 @@
+"use client";
+
 import Button from "@/app/component/Button";
 import Header from "@/app/component/Header";
 import Chart from "@/app/component/grid/Chart";
+import { useGoalStore } from "@/store/goal";
 
 export default function Home() {
+  const { goal } = useGoalStore();
+
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
+      <span>{JSON.stringify(goal)}</span>
       <div className="mx-48 flex flex-col items-center justify-center gap-8 pb-48 pt-176">
         <h2 className="text-32 font-medium">
           나만의 만다라트 계획표를 쉽게 만들어 보세요

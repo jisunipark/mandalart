@@ -4,17 +4,17 @@ type SubGoal = {
 };
 
 type KeyGoal = {
-  id: string;
+  id: number;
   keyGoal: string;
   subGoals: SubGoal[];
 };
 
-type GoalData = {
+export type GoalData = {
   coreGoal: string;
   keyGoals: KeyGoal[];
 };
 
-export const goalData = {
+export const DEFAULT_GOAL_DATA: GoalData = {
   coreGoal: "",
   keyGoals: [
     {
