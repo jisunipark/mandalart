@@ -16,7 +16,7 @@ const cellStyle = {
   subGoal: "bg-white",
 };
 
-export default function Cell({ type, cellId }: Props) {
+export default function Cell({ type, gridId, cellId }: Props) {
   const [thisGoal, setThisGoal] = useState("");
 
   const { goal, setGoal } = useGoalStore();
@@ -30,7 +30,11 @@ export default function Cell({ type, cellId }: Props) {
     }
 
     if (type === "keyGoal") {
+      nextGoal.keyGoals[gridId - 1].keyGoal = thisGoal;
+      setGoal(nextGoal);
     }
+
+    console.log(goal);
   };
 
   return (
