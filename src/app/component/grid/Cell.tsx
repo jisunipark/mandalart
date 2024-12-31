@@ -22,16 +22,21 @@ export default function Cell({ type, gridId, cellId }: Props) {
   const { goal, setGoal } = useGoalStore();
 
   const handleBlur = () => {
-    const nextGoal = { ...goal };
-
     if (type === "coreGoal") {
+      const nextGoal = { ...goal };
       nextGoal["coreGoal"] = thisGoal;
       setGoal(nextGoal);
     }
 
     if (type === "keyGoal") {
+      const nextGoal = { ...goal };
       nextGoal.keyGoals[gridId - 1].keyGoal = thisGoal;
       setGoal(nextGoal);
+    }
+
+    if (type === "subGoal") {
+      const nextGoal = { ...goal };
+      nextGoal.keyGoals[gridId - 1].subGoals[cellId - 1].subGoal = thisGoal;
     }
 
     console.log(goal);
